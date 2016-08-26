@@ -3,9 +3,6 @@ package com.example.mac.city;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -26,13 +23,13 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         Log.w("activity","oncreate1");
-
+/*
         Fragment fr = new MainActivityFragment();
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_place, fr, "zaaa");
+        fragmentTransaction.add(R.id.fragment_place, fr, "zaaa");
         fragmentTransaction.commit();
-
+*/
         Log.w("activity","oncreate2");
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
