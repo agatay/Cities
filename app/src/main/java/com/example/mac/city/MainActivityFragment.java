@@ -38,7 +38,7 @@ public class MainActivityFragment extends Fragment {
     }
 
     private void removeCity(Integer id) {
-        Log.w("fragment",list.get(id));
+        //Log.w("fragment",list.get(id));
         list.remove(id);
         mCityAdapter.notifyDataSetChanged();
     }
@@ -62,7 +62,7 @@ public class MainActivityFragment extends Fragment {
                 list
         );
         Log.w("fragment","oncreate2");
-        final ListView listview = (ListView) rootView.findViewById(R.id.city_list);
+        ListView listview = (ListView) rootView.findViewById(R.id.city_list);
         listview.setAdapter(mCityAdapter);
         registerForContextMenu(listview);
 
